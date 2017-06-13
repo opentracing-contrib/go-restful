@@ -13,13 +13,12 @@ import (
 func main() {
 	// 1) Create a opentracing.Tracer that sends data to Zipkin
 	collector, _ := zipkin.NewHTTPCollector(fmt.Sprintf("http://127.0.0.1:9411/api/v1/spans"))
-	// set tracer
-	otrestful.Tracer, _ = zipkin.NewTracer(
+	tracer, _ := zipkin.NewTracer(
 		zipkin.NewRecorder(collector, true, "0.0.0.0:0", "trivial"))
 
 	// install a global (=DefaultContainer) filter (processed before any webservice in the DefaultContainer)
 	// to provide  OpenTracing instrument
-	restful.Filter(otrestful.OTFilter)
+	restful.Filter(otrestful.NewOTFilter(tracer))
 
 	ws := new(restful.WebService)
 	ws.Route(ws.GET("/hello").To(hello))
