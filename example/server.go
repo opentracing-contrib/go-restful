@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/emicklei/go-restful"
+	"github.com/emicklei/go-restful/v3"
 	otrestful "github.com/opentracing-contrib/go-restful"
 	zipkin "github.com/openzipkin-contrib/zipkin-go-opentracing"
 )
