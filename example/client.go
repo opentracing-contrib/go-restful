@@ -1,3 +1,4 @@
+//go:build go1.7
 // +build go1.7
 
 package main
@@ -8,9 +9,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/opentracing-contrib/go-restful"
+	otrestful "github.com/opentracing-contrib/go-restful"
 	"github.com/opentracing-contrib/go-stdlib/nethttp"
-	zipkin "github.com/openzipkin/zipkin-go-opentracing"
+	zipkin "github.com/openzipkin-contrib/zipkin-go-opentracing"
 )
 
 func main() {
