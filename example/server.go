@@ -6,8 +6,8 @@ import (
 	"net/http"
 
 	"github.com/emicklei/go-restful"
-	"github.com/opentracing-contrib/go-restful"
-	zipkin "github.com/openzipkin/zipkin-go-opentracing"
+	otrestful "github.com/opentracing-contrib/go-restful"
+	zipkin "github.com/openzipkin-contrib/zipkin-go-opentracing"
 )
 
 func main() {
