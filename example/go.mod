@@ -5,7 +5,7 @@ go 1.24.1
 replace github.com/opentracing-contrib/go-restful => ../
 
 require (
-	github.com/emicklei/go-restful/v3 v3.12.2
+	github.com/emicklei/go-restful/v3 v3.13.0
 	github.com/opentracing-contrib/go-restful v0.0.0-20250811135259-4f51ac852939
 	github.com/opentracing-contrib/go-stdlib v1.1.0
 	github.com/openzipkin-contrib/zipkin-go-opentracing v0.5.0
