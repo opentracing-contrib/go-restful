@@ -6,7 +6,7 @@ replace github.com/opentracing-contrib/go-restful => ../
 
 require (
 	github.com/emicklei/go-restful/v3 v3.13.0
-	github.com/opentracing-contrib/go-restful v0.0.0-20260126124543-3602e039d6c9
+	github.com/opentracing-contrib/go-restful v0.0.0-20260202125245-e5eb8a5d9b67
 	github.com/opentracing-contrib/go-stdlib v1.1.1
 	github.com/openzipkin-contrib/zipkin-go-opentracing v0.5.0
 )
