@@ -1,6 +1,6 @@
 module github.com/opentracing-contrib/go-restful/example
 
-go 1.24.1
+go 1.25.0
 
 replace github.com/opentracing-contrib/go-restful => ../
 
@@ -15,5 +15,6 @@ require (
 	github.com/opentracing-contrib/go-observer v0.0.0-20170622124052-a52f23424492 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/openzipkin/zipkin-go v0.4.1 // indirect
-	google.golang.org/grpc v1.56.3 // indirect
+	golang.org/x/sys v0.39.0 // indirect
+	google.golang.org/grpc v1.79.3 // indirect
 )
