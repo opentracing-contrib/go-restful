@@ -15,6 +15,6 @@ require (
 	github.com/opentracing-contrib/go-observer v0.0.0-20170622124052-a52f23424492 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/openzipkin/zipkin-go v0.4.1 // indirect
-	golang.org/x/sys v0.43.0 // indirect
-	google.golang.org/grpc v1.82.1 // indirect
+	golang.org/x/sys v0.45.0 // indirect
+	google.golang.org/grpc v1.83.1 // indirect
 )
